@@ -31,17 +31,10 @@
 		</p>
 		<div id="mapid"></div>
 		<script>
-			const myIcon = L.icon({
-				iconUrl: 'my-icon.png',
-				iconSize: [38, 95],
-				iconAnchor: [22, 94],
-				popupAnchor: [-3, -76],
-				shadowUrl: 'my-icon-shadow.png',
-				shadowSize: [68, 95],
-				shadowAnchor: [22, 94],
-			});
-			const lat = 22.46178372948;
-			const long = -106.65626448697;
+			// En estas dos variables hay que indicar la latitud y la longitud.
+			const lat = 41.397577;
+			const long = 2.190077;
+
 			const mymap = L.map('mapid').setView([51.505, -0.09], 5);
 			L.tileLayer(
 				'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYmFja2VuZC1zaW5ndWxhcnMyMDIxIiwiYSI6ImNrb2xjcmcwcTBzMTMycHFmdmFjcDdvb2QifQ.yKmGg2BROgpWmS4KiCmJsA',
